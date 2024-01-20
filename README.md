@@ -5,4 +5,7 @@
 4. Click on the "Create" button on the top right and select "import repository"
 5. Click on enable public repositories
 6. Select the repository that you have cloned
-7. Wait for the process in the terminal to finish. Once it's done, you should be able to see index.html in the preview panel.
+7. Enter `npx --yes live-server` in the terminal
+8. Wait for the process in the terminal to finish. Once it's done, you should be able to see index.html in the preview panel.
+
+
