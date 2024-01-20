@@ -37,6 +37,28 @@
 <button>Call addEventListener</button>
 
 <!-- Todo 3.4a Create a form that accepts the first name and last name of the user -->
+<form>
+    <input type="text" name="firstName" id="firstName">
+    <input type="text" name="lastName" id="lastName">
+    <button id="submit-btn">Submit</button>
+</form>
+
+<script>
+    const results = {}
+    const firstNameInput = document.getElementById("firstName")
+    const lastNameInput = document.getElementById("lastName")
+    // Todo 3.4b When the user presses the submit form button, append the contents of the form to results. Then, display the content of results
+    // Relevant Link: https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+    document.getElementById("submit-btn").addEventListener("click", (e) => {
+        e.preventDefault() // prevents the page from being refreshed
+        // additional validation
+        console.log({
+            firstName: firstNameInput.value,
+            lastName: lastNameInput.value,
+        })
+        // post to server
+    })
+</script>
 
 <div>
     <h4>Todo 3.5</h4>
@@ -62,11 +84,6 @@
 
         // Checkpoint 3.1 What is the difference between inline event handlers and addEventListener? When should you use one over the other?
         // Answer: 
-
-        const results = []
-        // Todo 3.3b When the user presses the submit form button, append the contents of the form to results.
-        //          Then, display the content of results
-        // Resource: https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
         
         // Todo 3.5 add event listenders for the grandparent, parent, and child divs. 
         //          When clicked, the grandparent, parent, and child should log "Grandparent", "Parent", and "Child" respectively
