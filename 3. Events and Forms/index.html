@@ -29,7 +29,8 @@
 
 <!-- Todo 3.2a Create a button with the text "Call inline event handler". -->
 <!-- Add an inline event handler that logs "From inline event hanlder" when the button is clicked -->
-<!-- Relevant Link: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#inline_event_handlers_%E2%80%94_dont_use_these See other event listener mechanisms section -->
+<!-- Resource: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#inline_event_handlers_%E2%80%94_dont_use_these
+            - See other event listener mechanisms section -->
 <button>Call inline event handler</button>
 
 <!-- Todo 3.3a Create a button with the text "Call addEventListener" -->
@@ -52,21 +53,24 @@
 <body>
     <script>
         // Todo 3.1 When the page has loaded, log "The page has loaded"
-        // Relevant Link: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+        // Resource: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 
         // Todo 3.3b Add an event handler for the button created in 2.3a.
-        // The event handler should log "From addEventListener" when the button is clicked
-        // Relevant Link: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener see Using addEventListener() section
+        //          The event handler should log "From addEventListener" when the button is clicked
+        // Resource: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener
+        //          - See Using addEventListener() section
 
         // Checkpoint 3.1 What is the difference between inline event handlers and addEventListener? When should you use one over the other?
         // Answer: 
 
         const results = []
-        // Todo 3.3b When the user presses the submit form button, append the contents of the form to results. Then, display the content of results
-        // Relevant Link: https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+        // Todo 3.3b When the user presses the submit form button, append the contents of the form to results.
+        //          Then, display the content of results
+        // Resource: https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
         
-        // Todo 3.5 add event listenders for the grandparent, parent, and child divs. When clicked, the grandparent, parent, and child should log "Grandparent", "Parent", and "Child" respectively
-        // Relevant Link: https://youtu.be/XF1_MlZ5l6M?si=QrNjKXg-xXV6yghW @ 4:00 of the video
+        // Todo 3.5 add event listenders for the grandparent, parent, and child divs. 
+        //          When clicked, the grandparent, parent, and child should log "Grandparent", "Parent", and "Child" respectively
+        // Resource: https://youtu.be/XF1_MlZ5l6M?si=QrNjKXg-xXV6yghW @ 4:00 of the video
         const grandparent = document.querySelector(".grandparent")
         const parent = document.querySelector(".parent")
         const child = document.querySelector(".child")
