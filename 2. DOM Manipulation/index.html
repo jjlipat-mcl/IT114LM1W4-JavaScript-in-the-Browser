@@ -16,20 +16,31 @@
     </ul>
     <script>
         // Relevant link: https://youtu.be/5fb2aPlgoys?si=oOB2OYliN078Ensg first 30 minutes of the video
-
+        
         // Todo 2.1 Select the unordered list with the id "subjects-taken"
         // Relevant Link: https://dev.to/alternate_robot/dom-selectors-in-javascript-344i
-        
+        let unordered = document.getElementById("subjects-taken");
+
         // Checkpoint 2.1 What are the other ways to select elements in the DOM?
         // Answer: 
+        let otherUnordered = document.querySelectorAll("#subjects-taken > *");
         
         // Todo 2.2 Set the text of the first list item to "<>"
-
+        otherUnordered[0].innerText = "<>";
+        // otherUnordered
         // Checkpoint 3.2 What is the difference between innerText, textContent, and innerHTML. When should you use one over the other
         // Answer:
+        //textContent: General element text modification
+        //innerText: Text of element + children
+        //innerHtml: returns all text
 
         // Todo 2.3 Create another list item, and add it as a child of the unordered list
         // Relevant Link: https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree
+        const element = document.createElement("li");
+        element.setAttribute("style", "margin-top: 32px");
+        element.innerText = "IT114 - Web Systems";
+        unordered.appendChild(element);
+
 
         // Todo 2.4 Set the id attribute of the list item you created to "favorite-subject". Set the class of the list item to "newly-created"
 
