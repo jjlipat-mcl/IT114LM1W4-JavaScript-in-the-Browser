@@ -19,22 +19,35 @@
 
         // Todo 2.1 Select the unordered list with the id "subjects-taken"
         // Relevant Link: https://dev.to/alternate_robot/dom-selectors-in-javascript-344i
-        
+        document.getElementById('subjects-taken')
+        console.log('test')
+
         // Checkpoint 2.1 What are the other ways to select elements in the DOM?
-        // Answer: 
+        // Answer: document.querySelector('#subjects-taken')
         
         // Todo 2.2 Set the text of the first list item to "<>"
-
+        const item = document.getElementsByTagName("li")
+        console.log(item)
+        item[0].innerText = "<>"
         // Checkpoint 3.2 What is the difference between innerText, textContent, and innerHTML. When should you use one over the other
         // Answer:
+        // innerText - this property gets or sets the text content of an element
+        // textContent - this property gets or sets the text content of a specified nodes, and all its descendants
+        // innerHTML - this property gets or sets returns the HTML content of an element
 
         // Todo 2.3 Create another list item, and add it as a child of the unordered list
         // Relevant Link: https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree
+        var node = document.createElement("li")
+        var textnode = document.createTextNode("CS102 - Data Structures")
+        node.appendChild(textnode)
+        document.getElementById("subjects-taken").appendChild(node)
 
         // Todo 2.4 Set the id attribute of the list item you created to "favorite-subject". Set the class of the list item to "newly-created"
+        node.setAttribute("id", "favorite-subject")
+        node.setAttribute("class", "newly-created")
 
         // Todo 2.5 Delete the second list item in the unordered list
-
+        node.removeChild(node.item[1])
         // Checkpoint 2.3 Checkpoint what is the difference between node and element
 
         // Bonus Todo 2.6 Select the parent of the unordered list.
