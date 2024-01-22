@@ -37,20 +37,25 @@
         // Todo 2.3 Create another list item, and add it as a child of the unordered list
         // Relevant Link: https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree
         const element = document.createElement("li");
-        element.setAttribute("style", "margin-top: 32px");
+
         element.innerText = "IT114 - Web Systems";
         unordered.appendChild(element);
 
 
         // Todo 2.4 Set the id attribute of the list item you created to "favorite-subject". Set the class of the list item to "newly-created"
-
+        element.setAttribute("ID", "favorite-subject");
+        element.setAttribute("class", "newly-created");
+        
         // Todo 2.5 Delete the second list item in the unordered list
+        unordered.removeChild(unordered.children[1]);
 
         // Checkpoint 2.3 Checkpoint what is the difference between node and element
-
+        // Element is a specific type of Node that represents an HTML or XML element. (from Medium.com)
         // Bonus Todo 2.6 Select the parent of the unordered list.
+        let parent = unordered.parentNode;
 
         // Bonus Todo 2.7 Select the previous sibling of the list item you previously created
+        let prevSib = element.previousElementSibling;
     </script>
 </body>
 
